@@ -3,6 +3,9 @@ package stepDefinitions;
 import static io.restassured.RestAssured.given;
 
 import static org.junit.Assert.*; // static packages will not auto suggested by eclipse
+
+import java.io.FileNotFoundException;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,28 +18,27 @@ import io.restassured.specification.ResponseSpecification;
 import resources.TestDataBuild;
 import resources.Utils;
 
-public class StepDefinitions extends Utils{
+public class StepDefinitions extends Utils {
 	ResponseSpecification resSpec;
 	RequestSpecification res;
-	Response responseSpec;//80
+	Response responseSpec;// 80
 	TestDataBuild data = new TestDataBuild();
+
 	@Given("Add Place Payload")
-	public void add_place_payload() {
-		
-		
-		resSpec = new ResponseSpecBuilder().expectStatusCode(200)
-				.expectContentType(ContentType.JSON).build();
+	public void add_place_payload() throws FileNotFoundException {
 		res = given().spec(requestSpecification()).body(data.addPlacePayLoad());
 	}
 
 	@When("User calls {string} with Post http request")
 	public void user_calls_with_post_http_request(String string) {
-		responseSpec = res.when().post("/maps/api/place/add/json").then().spec(resSpec).extract().response();//79
+		resSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();// 81
+		responseSpec = res.when().post("/maps/api/place/add/json").then().spec(resSpec).extract().response();// 79
+
 	}
 
 	@Then("the API call got success with status code")
 	public void the_api_call_got_success_with_status_code() {
-	    assertEquals(responseSpec.getStatusCode(), 200);
+		assertEquals(responseSpec.getStatusCode(), 200);
 	}
 
 	@Then("{string} is Response body is {string}")
