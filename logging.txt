@@ -27,7 +27,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Thu, 13 Feb 2025 07:22:51 GMT
+Date: Fri, 14 Feb 2025 05:01:13 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "519e03304f458c79f4b3abdfd4874919",
+    "place_id": "28d59e7e42144e3e6cc5f22758efbefd",
     "scope": "APP",
-    "reference": "0ffec51d84cb4f38e5de91f72713800a0ffec51d84cb4f38e5de91f72713800a",
-    "id": "0ffec51d84cb4f38e5de91f72713800a"
+    "reference": "b22c11aab35acc8ba9d527c09c9b78d9b22c11aab35acc8ba9d527c09c9b78d9",
+    "id": "b22c11aab35acc8ba9d527c09c9b78d9"
 }
