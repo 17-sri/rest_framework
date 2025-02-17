@@ -12,11 +12,11 @@ Multiparts:		<none>
 Body:
 {
     "accuracy": 50,
-    "name": "Frontline house",
+    "name": "ABCD",
     "phone_number": "(+91) 983 893 3937",
-    "address": "29, side layout, cohen 09",
+    "address": "India",
     "website": "https://rahulshettyacademy.com",
-    "language": "French-IN",
+    "language": "English",
     "location": {
         "lat": -38.383494,
         "lng": 33.427362
@@ -27,7 +27,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Fri, 14 Feb 2025 05:01:13 GMT
+Date: Mon, 17 Feb 2025 04:40:02 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "28d59e7e42144e3e6cc5f22758efbefd",
+    "place_id": "32f4a2c4b2ed5100160b975b0000e264",
     "scope": "APP",
-    "reference": "b22c11aab35acc8ba9d527c09c9b78d9b22c11aab35acc8ba9d527c09c9b78d9",
-    "id": "b22c11aab35acc8ba9d527c09c9b78d9"
+    "reference": "ee6175647e8e1c6b09c01173827bfc62ee6175647e8e1c6b09c01173827bfc62",
+    "id": "ee6175647e8e1c6b09c01173827bfc62"
 }

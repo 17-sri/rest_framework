@@ -1,7 +1,6 @@
 package stepDefinitions;
 
 import static io.restassured.RestAssured.given;
-
 import static org.junit.Assert.*; // static packages will not auto suggested by eclipse
 
 import java.io.IOException;
@@ -24,16 +23,15 @@ public class StepDefinitions extends Utils {
 	Response responseSpec;// 80
 	TestDataBuild data = new TestDataBuild();
 
-	@Given("Add Place Payload")
-	public void add_place_payload() throws IOException {
-		res = given().spec(requestSpecification()).body(data.addPlacePayLoad());
+	@Given("Add Place Payload with {string} {string} {string}")//83
+	public void add_place_payload_with(String name,String language,String address) throws IOException {//83
+		res = given().spec(requestSpecification()).body(data.addPlacePayLoad(name,language,address));
 	}
 
 	@When("User calls {string} with Post http request")
 	public void user_calls_with_post_http_request(String string) {
 		resSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();// 81
 		responseSpec = res.when().post("/maps/api/place/add/json").then().spec(resSpec).extract().response();// 79
-
 	}
 
 	@Then("the API call got success with status code")
