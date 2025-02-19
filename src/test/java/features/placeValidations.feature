@@ -9,4 +9,4 @@ Scenario Outline: Verify if Place is being Successfully added using AddPlaceAPI
 	Examples:
 		|name|language|address|
 		|ABCD|English |India  |
-	
+		|EFGH|kannada |Kolar  |

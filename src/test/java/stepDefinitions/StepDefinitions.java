@@ -1,7 +1,7 @@
 package stepDefinitions;
 
-import static io.restassured.RestAssured.given;
-import static org.junit.Assert.*; // static packages will not auto suggested by eclipse
+import static io.restassured.RestAssured.given; // static packages will not auto suggested by eclipse
+import static org.junit.Assert.*; // we have to type our own
 
 import java.io.IOException;
 

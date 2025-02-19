@@ -27,7 +27,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Mon, 17 Feb 2025 04:40:02 GMT
+Date: Wed, 19 Feb 2025 10:53:59 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,8 +40,55 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "32f4a2c4b2ed5100160b975b0000e264",
+    "place_id": "dee467fe2c391a2759ee3fba33670170",
     "scope": "APP",
-    "reference": "ee6175647e8e1c6b09c01173827bfc62ee6175647e8e1c6b09c01173827bfc62",
-    "id": "ee6175647e8e1c6b09c01173827bfc62"
+    "reference": "f4d40a75fe1b3c0ad6aa74cce610d708f4d40a75fe1b3c0ad6aa74cce610d708",
+    "id": "f4d40a75fe1b3c0ad6aa74cce610d708"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "EFGH",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Kolar",
+    "website": "https://rahulshettyacademy.com",
+    "language": "kannada",
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+    },
+    "types": [
+        "shoe park",
+        "shop"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Wed, 19 Feb 2025 10:54:00 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "2c8603f46e05d3d2cfbab6b2e62c7d3a",
+    "scope": "APP",
+    "reference": "5c92f3cbda29c75b089a5cd2a6b56ef95c92f3cbda29c75b089a5cd2a6b56ef9",
+    "id": "5c92f3cbda29c75b089a5cd2a6b56ef9"
 }
